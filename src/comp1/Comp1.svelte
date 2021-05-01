@@ -1,9 +1,13 @@
 <script>
 	import css from './comp1.css';
 
+	console.log(css.comp1);
+	console.log(typeof css);
 	console.log(css);
+	console.log(css["comp1"]);
 </script>
 
 <dev>
-	<h1 class={css.comp1}>Hello comp1!</h1>
+	<p class={css["comp1"]}>Hello comp1!</p>
+	<p class={css.comp1}>Hello comp1!</p>
 </dev>
