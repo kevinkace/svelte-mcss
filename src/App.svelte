@@ -8,8 +8,10 @@
 </script>
 
 <main>
-	<h1 class={css.header}>class={'{css.header}'} - {css.header}</h1>
-	<h1 class={css["header"]}>class={'{css["header"]}'} - {css["header"]}</h1>
+	⚠ inner quotes are a lie 👇
+	<h1 class={css.header}>class=&lbrace;css.header&rbrace;</h1>
+	<h1 class="{css.header}">class="&lbrace;css.header&rbrace;"</h1>
+	<h1 class={css["header"]}>class=&lbrace;css["header"]&rbrace;</h1>
 
 	<p>both should have class "mXXX_header" and be green</p>
 </main>
